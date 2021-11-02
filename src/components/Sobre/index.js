@@ -51,8 +51,8 @@ export default function Sobre() {
 
         <section className={styles.social}>
           {sociais.map((social) => (
-            <a href={social.link}>
-              <div className={styles.itens} key={social.id}>
+            <a key={social.id} href={social.link}>
+              <div className={styles.itens}>
                 <span className={styles.icon}>{social.icon}</span>
                 <h2>{social.opcao}</h2>
                 <p>{social.nome}</p>

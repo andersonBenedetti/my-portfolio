@@ -53,3 +53,15 @@
 .social .itens:hover .icon svg {
   color: #1a1a1a;
 }
+
+@media (max-width: 850px) {
+  .social {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  .social p {
+    margin-bottom: 2rem;
+  }
+}

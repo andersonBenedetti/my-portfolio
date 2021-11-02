@@ -29,12 +29,8 @@ export default function Skills() {
 
         <section>
           {logos.map((logo) => (
-            <div className={styles.logo}>
-              <img
-                key={logo.name}
-                src={`${devicons}${logo.img}`}
-                alt={logo.name}
-              />
+            <div key={logo.name} className={styles.logo}>
+              <img src={`${devicons}${logo.img}`} alt={logo.name} />
             </div>
           ))}
         </section>

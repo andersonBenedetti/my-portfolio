@@ -16,12 +16,12 @@ export default function Header() {
           <RiCodeView />
         </div>
 
-        <div className={styles.nav}>
+        <nav className={styles.nav}>
           <AnchorLink href="#sobre">Sobre mim</AnchorLink>
           <AnchorLink href="#projetos">Projetos</AnchorLink>
           <AnchorLink href="#servicos">Serviços</AnchorLink>
           <AnchorLink href="#skills">Minhas Skills</AnchorLink>
-        </div>
+        </nav>
       </div>
 
       <section className={styles.headerInfo}>
@@ -38,8 +38,8 @@ export default function Header() {
           </button>
         </div>
 
-        <div>
-          <Img width="500px" display="block" />
+        <div className={styles.pageImg}>
+          <Img className={styles.img} />
         </div>
       </section>
     </header>
