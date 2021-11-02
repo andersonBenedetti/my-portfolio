@@ -35,3 +35,19 @@
 .options h2 {
   color: rgb(130, 130, 130);
 }
+
+@media (max-width: 950px) {
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+  .options div {
+    margin-bottom: 1rem;
+  }
+  .opttions div:last-child {
+    margin-bottom: 0;
+  }
+  .servicos section {
+    margin: 0 2rem;
+  }
+}

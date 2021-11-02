@@ -32,3 +32,13 @@
 .Projetos p {
   color: rgb(130, 130, 130);
 }
+
+@media (max-width: 950px) {
+  .Projetos section {
+    justify-content: center;
+  }
+  .Projetos div {
+    max-width: calc(100%);
+    margin: 0.5rem;
+  }
+}

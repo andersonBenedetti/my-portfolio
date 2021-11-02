@@ -17,6 +17,7 @@
 .Header .logo svg {
   width: 2rem;
   height: 2rem;
+  margin: 0.4rem 2rem 0 1rem;
   margin-left: 1rem;
   margin-top: 4px;
 }
@@ -30,6 +31,7 @@
   margin-left: 2rem;
   color: #f9f9f9;
   transition: 0.1s;
+  padding: 0.5rem;
 }
 
 .Header a:hover {
@@ -43,6 +45,7 @@
 
 .info h1 {
   font-size: 2.2rem;
+  width: 25rem;
 }
 
 .info p {
@@ -86,4 +89,32 @@
   box-shadow: 0 0 0 0.5px #1a1a1a, 0 0 0 1px #f9f9f9;
   background-color: #f9f9f9;
   color: black;
+}
+
+.pageImg {
+  width: 0 auto;
+  text-align: center;
+  padding: 0 1rem;
+}
+.img {
+  max-width: 100%;
+}
+
+@media (max-width: 800px) {
+  .Header {
+    flex-wrap: wrap;
+  }
+  .headerInfo {
+    flex-direction: column;
+  }
+  .img {
+    order: 1;
+  }
+  .info {
+    order: 2;
+    margin-bottom: 3rem;
+  }
+  .pageImg {
+    padding: 0;
+  }
 }
