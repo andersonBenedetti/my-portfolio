@@ -5,8 +5,11 @@ import { RiCodeView } from 'react-icons/ri';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 export default function Header() {
-  const url =
+  const urlWhats =
     'https://api.whatsapp.com/send?phone=5551997042710&text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20seu%20servi%C3%A7o.';
+
+  const urlCV =
+    'https://drive.google.com/file/d/1Jru6IL_3SM25g8hqoRi_HU3n_v6utM5q/view';
 
   return (
     <header className="container">
@@ -29,10 +32,15 @@ export default function Header() {
           <h1>Olá,</h1>
           <h1>Eu sou o Anderson Benedetti</h1>
           <p>Desenvolvedor Front-end</p>
-          <button className={styles.download}>Download CV</button>
+          <button
+            className={styles.download}
+            onClick={() => (window.location.href = `${urlCV}`)}
+          >
+            Download CV
+          </button>
           <button
             className={styles.entrar}
-            onClick={() => (window.location.href = `${url}`)}
+            onClick={() => (window.location.href = `${urlWhats}`)}
           >
             Entrar em contato
           </button>

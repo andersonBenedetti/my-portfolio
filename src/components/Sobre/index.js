@@ -46,7 +46,7 @@ export default function Sobre() {
           Busco uma oportunidade de atuar como desenvolvedor e, por meio deste
           cargo, assumir novos desafios. Atualmente, estou focado no JavaScript,
           estudando ReactJS. Sou apaixonado por esportes, música e tecnologia,
-          estou cursado o último módulo no curso Técnico de Informática.
+          estou cursando o último módulo no curso Técnico de Informática.
         </p>
 
         <section className={styles.social}>
